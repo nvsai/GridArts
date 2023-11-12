@@ -1,0 +1,125 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        #controls {
+            box-sizing: border-box;
+            width: 30%;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            border-right: 2px solid #ccc;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #color-picker {
+            height: 34px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #2077b3;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #105881;
+        }
+
+        #clear-button, #funny-button, #export-button {
+            background-color: #d9534f;
+        }
+	
+	#india-flag-button {
+	   background-color: green;
+	}
+        #clear-button:hover, #funny-button:hover, #india-flag-button:hover, #export-button:hover {
+            background-color: #ac2925;
+        }
+
+        #grid-container {
+            box-sizing: border-box;
+            width: 70%;
+            max-height: 100vh;
+            overflow-y: auto;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 0;
+        }
+
+        .grid-box {
+            box-sizing: border-box;
+            flex: 0 0 calc(100% / var(--cols));
+            height: 0;
+            padding-bottom: calc(100% / var(--cols));
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .numbering {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            color: #333;
+            font-size: 14px;
+        }
+
+        #profile {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #profile i {
+            font-size: 100px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        #profile a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        #funny-quote {
+            font-style: italic;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        #export-button {
+            background-color: #5bc0de;
+        }
+
+        #export-button:hover {
+            background-color: #31b0d5;
+        }
